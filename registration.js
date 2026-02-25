@@ -25,7 +25,7 @@ window.onload = function() {
         renderTable(); 
     } else {
         // Kick them back to login if no cookie is found
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
     }
 };
 
@@ -33,7 +33,7 @@ window.onload = function() {
 document.getElementById('logoutBtn').addEventListener('click', function() {
     // Delete the cookie by setting an expiration date in the past
     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
 });
 
 // --- 4. Handle Form Submission ---
